@@ -111,4 +111,39 @@ p {
   margin: 10px 10px 10px 40px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
 
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.7em; }
+
+  h4 {
+    font-size: 0.5em; }
+
+  .portfolio-photos {
+    width: 355px;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
+
+  .portfolio-photos-portraits {
+    width: 355px;
+    height: 550px;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
+
+  .portfolio-photos-portraits:last-child {
+    width: 355px;
+    height: auto; }
+
+  .portfolio-photos-weddings {
+    width: 355px;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
+
+  .portfolio-photos-weddings-vert {
+    width: 355px;
+    height: 550px;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2); } }
+
 /*# sourceMappingURL=main.css.map */
