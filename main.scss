@@ -11,7 +11,7 @@ body {
 .wrapper {
     width: 80%;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -67,7 +67,8 @@ footer{
     padding-right: 20px;
     
 }
-p {
+footer p {
+    margin: 5px auto;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
@@ -82,25 +83,35 @@ h2 {
     text-transform: uppercase;
     
 }
-.wrapp {
-    width: 80%;
-    margin: 0px auto;
-    position: relative;
-    text-align: justify;
+.wr-contact {
     
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    margin-left: 300px;
+    position: relative;
+    text-align: left;
 }
-.About-Me {
+.info {
+    color: rgb(168, 164, 164);
     text-indent: 50px;
-    font-size: 1em;
-    line-height: 23px;
-    float: left;
-    shape-outside:circle();
+    font-size: 1.1em;
+    line-height: 24px;
+    word-break: break-all;
+    margin-left: 15px;
 }
+
 .img-profile {
     width: 250px;
     height: 250px;
+    margin-right: 25px;
     border-radius: 50%;
+    shape-outside:circle();
     box-shadow:  0 10px 10px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+.clr {
+    clear: both;
 }
 
 .hr {
