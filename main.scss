@@ -77,6 +77,9 @@ footer p {
     color: rgb(168, 164, 164);
     font-size: 0.8em;
 }
+
+// contact section
+
 h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -128,6 +131,12 @@ h2 {
 h3 {
     color: rgb(43, 43, 43);
     text-align: center;
+    padding-bottom: 10px;
+}
+
+h3 span {
+    color: rgb(168, 164, 164);
+    text-align: center;
 }
 
 // portfolio photos
@@ -138,37 +147,75 @@ h3 {
     text-align: center;
     margin: auto;
 }
+
+// landscapes section
+
 .portfolio-photos {
-    width: 800px;
-    height: 500px;
-    margin: 10px 10px 10px 40px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 10px 40px 10px 40px;
+    padding: 5px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+.portfolio-photos:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+// background of sections
 .no-background {
     background-image: none;
     background-color: rgba(34, 35, 103, 0.85);
 }
+
+// portraits section
+
 .portfolio-photos-portraits {
-    width: 500px;
-    height: 700px;
-    margin: 10px 10px 10px 40px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    height: 350px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 10px 40px 10px 40px;
+    padding: 5px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.portfolio-photos-portraits:last-child {
-    width: 800px;
-    height: 500px;
+.portfolio-photos-portraits-hor {
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 10px 40px 10px 40px;
+    padding: 5px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+.portfolio-photos-portraits:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.portfolio-photos-portraits-hor:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+// wedding section
+
 .portfolio-photos-weddings {
-    width: 800px;
-    height: 500px;
-    margin: 10px 10px 10px 40px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 10px 40px 10px 40px;
+    padding: 5px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .portfolio-photos-weddings-vert {
-    width: 500px;
-    height: 700px;
-    margin: 10px 10px 10px 40px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    height: 350px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 10px 40px 10px 40px;
+    padding: 5px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.portfolio-photos-weddings:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.portfolio-photos-weddings-vert:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 //mobile view
@@ -181,12 +228,18 @@ h3 {
     h4 {
         font-size: 0.5em;
     }
+
+    //portfolio photos
+
     .portfolio-photos {
         width: 355px;
         height: auto;
         margin: 10px 0px 10px 0px;
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     }
+
+    // portraits section
+
     .portfolio-photos-portraits {
         width: 355px;
         height: 550px;
@@ -194,10 +247,14 @@ h3 {
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .portfolio-photos-portraits:last-child {
+    .portfolio-photos-portraits-hor {
         width: 355px;
         height: auto;
+        margin: 0 auto;
     }
+
+    // weddings section
+
     .portfolio-photos-weddings {
         width: 355px;
         height: auto;
@@ -209,6 +266,59 @@ h3 {
         height: 550px;
         margin: 10px 0px 10px 0px;
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    // contact section
+
+.wr-contact {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+    }
+
+.info {
+        color: rgb(168, 164, 164);
+        text-indent: 10px;
+        font-size: 0.9em;
+        line-height: 5px;
+        word-break: break-all;
+        margin-left: 8px;
+    }
+    
+.img-profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        shape-outside:circle();
+        box-shadow:  0 5px 5px rgba(0, 0, 0, 0.3);
+        float: left;
+    }
+.clr {
+        clear: both;
+    }    
+
+.hr {
+        width: 70%;
+        margin-left: 53px;
+        margin-top: 200px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid gray;
+        box-shadow: 3px 3px 3px rgba(56, 53, 53, 0.5);
+        opacity: 0.5;
+    }
+h3 {
+        color: rgb(43, 43, 43);
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+h3 span {
+        color: rgb(168, 164, 164);
+        text-align: center;
     }
 }
 
