@@ -15,10 +15,10 @@ body {
 }
 a {
     text-decoration: none;
-    color: rgba(146, 143, 143, 0.815);
+    color: rgba(248, 244, 244, 0.622);
 }
 a:hover {
-    color: rgb(54, 53, 53);
+    color: rgba(107, 104, 104, 0.37);
 }
 h1 {
     text-align: center;
@@ -146,6 +146,7 @@ h3 span {
     height: 100%;
     text-align: center;
     margin: auto;
+    display: inline-block;
 }
 
 // landscapes section
@@ -154,12 +155,15 @@ h3 span {
     width: 350px;
     border: 1px solid gray;
     border-radius: 4px;
-    margin: 10px 40px 10px 40px;
+    margin: 40px 10px 40px 40px;
     padding: 5px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);  
+    
 }
 .portfolio-photos:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 // background of sections
@@ -174,7 +178,7 @@ h3 span {
     height: 350px;
     border: 1px solid gray;
     border-radius: 4px;
-    margin: 10px 40px 10px 40px;
+    margin: 40px 40px 40px 40px;
     padding: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -182,15 +186,19 @@ h3 span {
     width: 350px;
     border: 1px solid gray;
     border-radius: 4px;
-    margin: 10px 40px 10px 40px;
+    margin: 40px 40px 40px 40px;
     padding: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .portfolio-photos-portraits:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 .portfolio-photos-portraits-hor:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 // wedding section
@@ -199,7 +207,7 @@ h3 span {
     width: 350px;
     border: 1px solid gray;
     border-radius: 4px;
-    margin: 10px 40px 10px 40px;
+    margin: 40px 40px 40px 40px;
     padding: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -207,15 +215,152 @@ h3 span {
     height: 350px;
     border: 1px solid gray;
     border-radius: 4px;
-    margin: 10px 40px 10px 40px;
+    margin: 40px 40px 40px 40px;
     padding: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .portfolio-photos-weddings:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 .portfolio-photos-weddings-vert:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+// booking section
+
+.background-cover {
+    background: url(img/home-img/home-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.background-cover::after {
+    content: "";
+    background: url(img/home-img/home-img.jpg);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+.booking-title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.booking-title h3 {
+    color: rgb(168, 164, 164);
+    text-shadow: 1px 3px 3px rgba(0,0,0, 0.4);
+    letter-spacing: 7px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.booking-title h3::before {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: rgba(218, 213, 213, 0.5);
+    display: block; 
+    margin-bottom: 5px;
+}
+.booking-title h3::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: rgba(218, 213, 213, 0.5);
+    display: block; 
+    margin-top: 5px;
+}
+
+.booking-form-box {
+    max-width: 450px;
+    border: 1px solid #ced4da;
+    margin-top: 340px;
+    position: absolute;
+    text-align: center;
+}
+
+.checkbox-btn {
+    margin: 0 40px;
+    text-align: center;
+}
+
+.checkbox-btn .btn {
+    margin: 20px 2px 20px 5px;
+}
+
+.checkbox-btn span {
+    color: rgb(219, 213, 213);
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.checkbox-btn span:last-child::after {
+    content: "*";
+    display: inline-block;
+    font-size: 15px;
+}
+
+.booking-form {
+    padding:  20px 20px;
+    display: block;
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(219, 213, 213);
+    display: block;  
+}
+
+input::placeholder {
+    color: rgb(173, 170, 170);
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 7px;
+    color: #fff;
+    background: transparent;
+    width: 70%;
+    height: 30px;
+    border: 1px solid rgb(212, 210, 210);
+    text-align: center;
+}
+
+textarea::placeholder {
+    color: rgb(228, 226, 226);
+}
+.submit {
+    text-align: center;
+    background: transparent;
+}
+
+.submit .submit-btn {
+    width: 100px;
+    height: 40px;
+    font-family: viner hand ITC;
+    text-transform: uppercase;
+    background: rgba(55, 37, 216, 0.829);
+    color: rgb(173, 170, 170);
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border: none;
+}
+
+.submit .submit-btn:hover {
+    background: rgba(39, 26, 156, 0.911);
 }
 
 //mobile view
@@ -284,7 +429,7 @@ h2 {
         color: rgb(168, 164, 164);
         text-indent: 10px;
         font-size: 0.9em;
-        line-height: 5px;
+        line-height: 15px;
         word-break: break-all;
         margin-left: 8px;
     }
