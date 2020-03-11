@@ -57,6 +57,9 @@ nav ul li {
 nav ul li:last-child {
     border: none;
 }
+
+// footer
+
 footer{
     margin-top: 660px;
 }
@@ -73,9 +76,13 @@ footer{
 .links {
     width: 35px;
     height: 35px;
-    padding-right: 20px;
-    
+    padding-right: 25px;
 }
+
+.links:hover {
+    cursor: pointer;
+}
+
 footer p {
     margin: 5px auto;
     text-align: center;
