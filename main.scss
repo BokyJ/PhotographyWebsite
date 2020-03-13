@@ -46,7 +46,7 @@ nav ul li {
     display: inline-block;
     text-align: center;
     margin-top: 50px;
-    padding-right: 50px ;
+    padding-right: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     letter-spacing: 3px;
     font-weight: bold;
@@ -407,6 +407,11 @@ textarea::placeholder {
     h4 {
         font-size: 0.5em;
     }
+
+    nav ul li {
+        border: none;
+        padding-right: auto;
+    }
     //portfolio photos
 
     .portfolio-photos {
@@ -528,5 +533,101 @@ textarea::placeholder {
         color: rgb(211, 205, 205);
         text-align: center;
     }
+
+    // sidebar
+
+        
+
+    }
+
+    @media (max-width: 768px) {
+
+        h1 {
+            font-size: 1.9em;
+        }
+
+        h4 {
+            font-size: 0.6em;
+        }
+
+        nav ul li {
+            border-right: none;
+        }
+
+        .portfolio-photos {
+            margin: 10px 0 10px 0;
+        }
+        .wr-contact {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        h2::before {
+            content: "";
+            width: 50%;
+            height: 6px;
+            background: rgba(218, 213, 213, 0.5);
+            display: block; 
+            margin-bottom: 5px;
+            margin: 0 auto;
+        }
+        h2::after {
+            content: "";
+            width: 50%;
+            height: 6px;
+            background: rgba(218, 213, 213, 0.5);
+            display: block; 
+            margin-top: 5px;
+            margin: 0 auto;
+        }
+
+        .img-profile {
+            width: 100px;
+            height: 100px;
+        }
+        .booking-form-box {
+            max-width: 98%;
+        }
+    }
+
+    @media (max-width: 1275px) {
+
+        nav ul li {
+            border-right: none;
+        }
+
+        .wr-contact {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        h2::before {
+            content: "";
+            width: 20%;
+            height: 6px;
+            background: rgba(218, 213, 213, 0.5);
+            display: block; 
+            margin-bottom: 5px;
+            margin: 0 auto;
+        }
+        h2::after {
+            content: "";
+            width: 20%;
+            height: 6px;
+            background: rgba(218, 213, 213, 0.5);
+            display: block; 
+            margin-top: 5px;
+            margin: 0 auto;
+        }
     }
 
