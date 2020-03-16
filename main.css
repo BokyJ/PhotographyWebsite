@@ -13,6 +13,12 @@ body {
   height: 100%;
   margin: 0 auto; }
 
+label #btn, label #cancel {
+  display: none; }
+
+#check {
+  display: none; }
+
 a {
   text-decoration: none;
   color: rgba(248, 244, 244, 0.622); }
@@ -535,6 +541,50 @@ textarea::placeholder {
     background: rgba(218, 213, 213, 0.5);
     display: block;
     margin-top: 5px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  nav ul {
+    background: rgba(29, 19, 116, 0.9);
+    width: 100%;
+    position: fixed;
+    border-radius: 10px;
+    margin-top: 50px;
+    right: -100%;
+    transition: all .5s;
+    z-index: 1; }
+
+  nav ul li {
+    display: block;
+    text-align: right;
+    margin: 35px auto;
+    line-height: 45px; }
+
+  label #btn {
+    color: rgba(218, 213, 213, 0.5);
+    font-size: 30px;
+    float: right;
+    margin-right: -5%;
+    margin-top: 20px;
+    display: block; }
+
+  label #cancel {
+    color: rgba(218, 213, 213, 0.5);
+    font-size: 30px;
+    float: right;
+    margin-right: -5%;
+    margin-top: 20px;
+    display: none; }
+
+  #check {
+    display: none; }
+
+  #check:checked ~ ul {
+    right: 0; }
+
+  #check:checked ~ label #btn {
+    display: none; }
+
+  #check:checked ~ label #cancel {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */
