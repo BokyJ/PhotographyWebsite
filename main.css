@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
 
 body {
   background-image: url(img/home-img/home-img.jpg);
@@ -357,6 +358,16 @@ textarea::placeholder {
   letter-spacing: 3px;
   transition: .5s; }
 
+.up-arrow {
+  font-size: 35px;
+  margin-left: 1650px;
+  margin-bottom: -10px;
+  display: block;
+  color: #adaaaa; }
+
+.fa-arrow-alt-circle-up:hover {
+  color: #f5efef; }
+
 @media (max-width: 375px) {
   h1 {
     font-size: 1.7em; }
@@ -585,6 +596,9 @@ textarea::placeholder {
     display: none; }
 
   #check:checked ~ label #cancel {
-    display: block; } }
+    display: block; }
+
+  .up-arrow {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
